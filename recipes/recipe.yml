@@ -12,10 +12,9 @@ image-version: latest # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  - type: rpm-ostree
+  - type: dnf
     repos:
        - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
-    files:
     install:
       packages:
         - brave-browser
