@@ -14,8 +14,8 @@ image-version: latest # latest is also supported if you want new updates ASAP
 modules:
   - type: dnf
     repos:
+       - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
     files:
-        - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
     install:
       packages:
         - brave-browser
