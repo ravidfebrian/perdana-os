@@ -13,12 +13,18 @@ image-version: latest # latest is also supported if you want new updates ASAP
 # you can include multiple instances of the same module
 modules:
   - type: dnf
-    files:
-      add:
+    repos:
+      cleanup: true
+      files:
         - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+    keys:
+      - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
     install:
+      skip-unavailable: true # skip unavailable packages
       packages:
-        - brave-browser
+        - repo: brave-browser
+          packages: 
+            - brave-browser
         
   #- type: default-flatpaks
    # configurations:
