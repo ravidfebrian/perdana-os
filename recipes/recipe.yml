@@ -17,8 +17,8 @@ modules:
       cleanup: true
       files:
         - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
-    keys:
-      - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+      keys:
+        - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
     install:
       skip-unavailable: true # skip unavailable packages
       packages:
