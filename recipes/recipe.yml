@@ -23,7 +23,10 @@ modules:
       skip-unavailable: true # skip unavailable packages
       packages:
         - brave-browser
-        - waydroid
+        
+  - type: rpm-ostree
+    install:
+      - waydroid
         
   - type: default-flatpaks
     configurations:
